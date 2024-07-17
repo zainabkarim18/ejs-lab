@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+
+<body>
+    <%- include('./partials/nav') %>
+    <h1>Full Menu</h1>
+
+    <ul>
+        <% RESTAURANT.menu.forEach((menuList)=> { %>
+            <!-- <a href="/<%=//index%>"> -->
+                <li> Name : <%= menuList.name %> </li>
+                <li> Price : <%= menuList.price %> </li>
+                <li> Rating : <%= menuList.rating %> </li>
+                <!-- <li> Category : <%= //menuList.category %> </li> -->
+                <li> Details : <%= menuList.details %> </li>
+                <br />
+                
+                                    
+                <% }); %>
+            <!-- </a> -->
+    </ul>
+
+
+</body>
+
+</html>
